@@ -1,12 +1,12 @@
-# Mona - 事件监听机制
+# Mona - 事件机制
 
 ✨✨ 一款小而全的事件监听产品，满足你的各种体位
 
-[![npm](https://img.shields.io/npm/v/mona-events.svg?style=flat-square)](https://www.npmjs.com/package/mona-events) [![npm](https://img.shields.io/npm/dt/mona-events.svg?style=flat-square)](https://www.npmjs.com/package/mona-events)
+[![npm](https://img.shields.io/npm/v/@monajs/mevents.svg?style=flat-square)](https://www.npmjs.com/package/@monajs/mevents) [![npm](https://img.shields.io/npm/dt/@monajs/mevents.svg?style=flat-square)](https://www.npmjs.com/package/@monajs/mevents)
 
 ## 大致介绍
 
-这款轻量版 mona-events 主要实现了事件的监听和消息的分发功能，你可以基于这个方法进行赋能。
+这款轻量版 events 主要实现了事件的监听和消息的分发功能，你可以基于这个方法进行赋能。
 > 可以参考 [监听者模式实战应用](https://github.com/func-star/blog/issues/23)
 
 ## 使用场景
@@ -27,14 +27,14 @@
 ## 安装
 
 ```bash
-$ npm i --save mona-events
+$ npm i --save @monajs/mevents
 ```
 
 
 ## 代码演示
 
 ```js
-import Events from 'mona-events'
+import Events from '@monajs/mevents'
 
 const event = new Events()
 
@@ -47,10 +47,10 @@ event.emit('eventName' ,{...})
 
 ## 进一步应用
 
-你也可以继承 `mona-events` ，结合自己的业务逻辑来实现更高级的功能
+你也可以继承 `@monajs/mevents` ，结合自己的业务逻辑来实现更高级的功能
 
 ```js
-import Events from 'mona-events'
+import Events from '@monajs/mevents'
 
 class Ctrl extends Events {
 	...

@@ -1,11 +1,11 @@
 /*
- * 	消息机制（监听者模式）
+ * 	事件机制（监听者模式）
  * 	by yangxi
  */
 
-export default class MonaEvents {
+class MonaEvents {
 	_monaEvents = {}
-	
+
 	emit (name, ...data) {
 		if (!this._monaEvents[name]) {
 			return
@@ -20,7 +20,7 @@ export default class MonaEvents {
 			return v.count !== 0
 		})
 	}
-	
+
 	on (eName, fun, count = -1) {
 		if (!eName) {
 			throw new Error('事件名不允许为空')
@@ -39,11 +39,11 @@ export default class MonaEvents {
 			key: nameInfo[1]
 		})
 	}
-	
+
 	once (name, fun) {
 		this.on(name, fun, 1)
 	}
-	
+
 	off (eName, fun) {
 		if (!eName) {
 			return
@@ -64,7 +64,7 @@ export default class MonaEvents {
 			})
 			return
 		}
-		
+
 		if (key) {
 			if (fun) {
 				this._monaEvents[name] = this._monaEvents[name].filter((v) => {
@@ -78,3 +78,5 @@ export default class MonaEvents {
 		}
 	}
 }
+
+module.exports = MonaEvents
