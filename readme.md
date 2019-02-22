@@ -2,7 +2,7 @@
 
 ✨✨ 一款小而全的事件监听产品，满足你的各种体位
 
-[![npm](https://img.shields.io/npm/v/@monajs/mevents.svg?style=flat-square)](https://www.npmjs.com/package/@monajs/mevents) [![npm](https://img.shields.io/npm/dt/@monajs/mevents.svg?style=flat-square)](https://www.npmjs.com/package/@monajs/mevents)
+[![npm](https://img.shields.io/npm/v/@monajs/events.svg?style=flat-square)](https://www.npmjs.com/package/@monajs/events) [![npm](https://img.shields.io/npm/dt/@monajs/events.svg?style=flat-square)](https://www.npmjs.com/package/@monajs/events)
 
 ## 大致介绍
 
@@ -27,14 +27,14 @@
 ## 安装
 
 ```bash
-$ npm i --save @monajs/mevents
+$ npm i --save @monajs/events
 ```
 
 
 ## 代码演示
 
 ```js
-import Events from '@monajs/mevents'
+import Events from '@monajs/events'
 
 const event = new Events()
 
@@ -47,10 +47,10 @@ event.emit('eventName' ,{...})
 
 ## 进一步应用
 
-你也可以继承 `@monajs/mevents` ，结合自己的业务逻辑来实现更高级的功能
+你也可以继承 `@monajs/events` ，结合自己的业务逻辑来实现更高级的功能
 
 ```js
-import Events from '@monajs/mevents'
+import Events from '@monajs/events'
 
 class Ctrl extends Events {
 	...
