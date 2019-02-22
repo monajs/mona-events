@@ -1,6 +1,6 @@
 {
     "name": "@monajs/events",
-    "version": "1.0.0",
+    "version": "1.1.0",
     "description": "Mona系列 - 事件机制",
     "main": "index.js",
     "scripts": {
@@ -19,7 +19,7 @@
         "diff"
     ],
     "author": "yangxi",
-    "license": "ISC",
+    "license": "MIT",
     "bugs": {
         "url": "https://github.com/monajs/mona-events/issues"
     },
